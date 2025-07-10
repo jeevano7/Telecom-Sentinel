@@ -1,11 +1,11 @@
-# pages/2_📡_Anomaly_Deep_Dive.py
+# pages/2_Anomaly_Deep_Dive.py
 import streamlit as st
 from utils import load_data, load_models
 import plotly.express as px
 import pandas as pd
 
 st.set_page_config(page_title="Anomaly Deep Dive", layout="wide")
-st.title("📡 Anomaly Deep Dive")
+st.title("Anomaly Deep Dive")
 
 # --- Load Data and Models ---
 _, towers_df, logs_df, _ = load_data()
@@ -22,9 +22,9 @@ if selected_tower:
     
     st.header(f"Tower {selected_tower} | Chronic Status: {chronic_status}")
     if chronic_status == 'Unhealthy':
-        st.warning("⚠️ This tower is designated as chronically **Unhealthy**, meaning it consistently provides sub-par service.")
+        st.warning("This tower is designated as chronically **Unhealthy**, meaning it consistently provides sub-par service.")
     else:
-        st.success("✅ This tower is designated as **Healthy**, with good baseline performance.")
+        st.success("This tower is designated as **Healthy**, with good baseline performance.")
 
 
     # --- Filter Data for Selected Tower ---
