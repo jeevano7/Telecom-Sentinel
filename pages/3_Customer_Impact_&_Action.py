@@ -1,10 +1,10 @@
-# pages/3_💡_Customer_Impact_&_Action.py
+# pages/3_Customer_Impact_&_Action.py
 import streamlit as st
 from utils import load_data, load_models
 import pandas as pd
 
 st.set_page_config(page_title="Customer Impact Analysis", layout="wide")
-st.title("💡 Customer Impact & Action Center")
+st.title("Customer Impact & Action Center")
 
 # --- Load Data and Models ---
 customers_df, towers_df, logs_df, _ = load_data()
@@ -28,9 +28,9 @@ problem_tower_ids = sorted(list(set(active_anomaly_towers['tower_id'].tolist() +
 
 # --- Main Page Logic ---
 if not problem_tower_ids:
-    st.success("✅ All systems are operating within normal parameters. No chronic issues or active anomalies detected.")
+    st.success("All systems are operating within normal parameters. No chronic issues or active anomalies detected.")
 else:
-    st.warning(f"🚨 {len(problem_tower_ids)} towers require attention.")
+    st.warning(f" {len(problem_tower_ids)} towers require attention.")
     
     # --- Create a more informative selection box ---
     def format_tower_for_selectbox(tower_id):
