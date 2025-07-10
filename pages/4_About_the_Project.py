@@ -1,8 +1,8 @@
-# pages/4_🔬_About_the_Project.py
+# pages/4_About_the_Project.py
 import streamlit as st
 
 st.set_page_config(page_title="About", layout="wide")
-st.title("🔬 About the Project & Methodology")
+st.title("About the Project & Methodology")
 
 st.markdown("""
 This 'Telecom Sentinel' project is a comprehensive demonstration designed to showcase a range of skills relevant to a product-based company in the telecommunications sector. It moves beyond a simple model to a full-fledged, interactive application that bridges the gap between technical network operations and business-focused product management.
