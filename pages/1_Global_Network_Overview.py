@@ -1,4 +1,4 @@
-# pages/1_🌍_Global_Network_Overview.py
+# pages/1_Global_Network_Overview.py
 import streamlit as st
 from utils import load_data, load_models
 import plotly.express as px
@@ -7,7 +7,7 @@ from streamlit_folium import st_folium
 import pandas as pd
 
 st.set_page_config(page_title="Global Network Overview", layout="wide")
-st.title("🌍 Global Network Overview")
+st.title("Global Network Overview")
 st.markdown("Differentiating between chronic poor service (**Unhealthy Towers**) and acute, temporary events (**Anomalies**).")
 
 # --- Load Data and Models ---
