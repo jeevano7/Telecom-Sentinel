@@ -1,4 +1,4 @@
-# 💫 About Me:
+# 💫 About The Project:
 AI Telecom Sentinel is an end-to-end Machine Learning application designed to reduce customer churn by intelligently linking network performance to business risk. The system uses a dual-model approach: an unsupervised Isolation Forest detects real-time network anomalies, while a supervised XGBoost model predicts the immediate churn risk for affected customers. This transforms raw technical alerts into a prioritized action plan for customer retention teams. The entire solution is deployed as an interactive dashboard using Streamlit, featuring geospatial maps and time-series analytics for comprehensive, data-driven decision-making.
 
 
